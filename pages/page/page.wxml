@@ -1,0 +1,16 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<import src="../../templates/header.wxml"/> 
+<view class="container">
+    <view class="content-article ">
+                    <view class="entry-title">
+                   {{pageData.title.rendered}}
+                    </view>
+                    <view class="entry-summary">
+                    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+                    </view>
+                </view>
+
+            <view class="ditail-copyright" style="display:{{display}}">
+ 
+  </view>
+</view>
